@@ -7,14 +7,7 @@ using Radius.Models;
 namespace Radius.Services;
 
 public class SeasonalStorageService :
-    IStartsSeasonalStorage,
-    IGetsSeasonalStorageById,
-    IGetsCustomerSeasonalStorages,
-    IGetsActiveSeasonalStorages,
-    IChangeStorageTireDescription,
-    IChangeStorageTireQuantity,
-    IChangeStorageExpirationDate,
-    IEndsSeasonalStorage
+    ISeasonalStorageService
 {
     private readonly List<SeasonalStorage> _storages = new();
 

@@ -9,16 +9,7 @@ using Radius.Models;
 namespace Radius.Services;
 
 public class VehicleService :
-    IAddsVehicle,
-    IRemovesVehicle,
-    IGetsAllVehicles,
-    IGetsVehicleById,
-    IUpdatesVehicle,
-    IChangePlateNumber,
-    IChangeVinCode,
-    IChangeBodyType,
-    IChangeFuelType,
-    IChangeTransmission
+    IVehicleService
 {
     private const string DebugLogPath = @"C:\Users\maksi\Desktop\Radius3-master-master\debug-00c82d.log";
     // Тимчасова локальна база даних у пам'яті (доки не підключимо SQLite або API)

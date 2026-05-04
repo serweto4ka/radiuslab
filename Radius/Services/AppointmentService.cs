@@ -9,16 +9,7 @@ using Radius.Models;
 namespace Radius.Services;
 
 public class AppointmentService :
-    ISchedulesAppointment,
-    IGetsAppointmentById,
-    IGetsCustomerAppointments,
-    IGetsAppointmentsByDate,
-    IChangeAppointmentDate,
-    IChangeAppointmentStatus,
-    IChangeAppointmentDescription,
-    IChangeAppointmentVehicle,
-    ICancelsAppointment,
-    IGetsVehicleAppointments
+    IAppointmentService
 {
     private const string DebugLogPath = @"C:\Users\maksi\Desktop\Radius3-master-master\debug-00c82d.log";
     private readonly List<Appointment> _appointments = new();

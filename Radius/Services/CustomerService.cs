@@ -9,13 +9,7 @@ using Radius.Models;
 namespace Radius.Services;
 
 public class CustomerService :
-    IRegistersCustomer,
-    IGetsCustomerById,
-    IChangeCustomerName,
-    IChangeCustomerPhone,
-    IChangeCustomerEmail,
-    IChangeCustomerPassword,
-    IAddsCustomerExpense
+    ICustomerService
 {
     private const string DebugLogPath = @"C:\Users\maksi\Desktop\Radius3-master-master\debug-00c82d.log";
     private readonly List<Customer> _customers = new();
