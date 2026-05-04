@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radius.Pages.BookAppointmentPage"
+             Title="Новий запис">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="12">
+            <Label Text="Створити новий запис"
+                   FontSize="24"
+                   FontAttributes="Bold" />
+            <Label x:Name="CustomerInfoLabel" />
+            <Picker x:Name="VehiclePicker" Title="Оберіть авто" />
+            <DatePicker x:Name="DatePickerControl" />
+            <TimePicker x:Name="TimePickerControl" />
+            <Picker x:Name="ServicePicker" Title="Послуга">
+                <Picker.Items>
+                    <x:String>Заміна шин</x:String>
+                    <x:String>Балансування</x:String>
+                    <x:String>Ремонт проколу</x:String>
+                    <x:String>Сезонне зберігання</x:String>
+                </Picker.Items>
+            </Picker>
+            <Editor x:Name="CommentEditor" Placeholder="Коментар до запису" HeightRequest="100" />
+            <Button Text="Підтвердити запис" Clicked="OnSubmitClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

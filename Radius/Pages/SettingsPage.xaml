@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radius.Pages.SettingsPage"
+             Title="Налаштування">
+    <VerticalStackLayout Padding="24" Spacing="12">
+        <Label Text="Налаштування"
+               FontSize="24"
+               FontAttributes="Bold" />
+        <Label Text="Нагадування про запис" />
+        <Switch IsToggled="True" />
+        <Label Text="Темна тема" />
+        <Switch />
+        <Label Text="Push-сповіщення" />
+        <Switch IsToggled="True" />
+        <Picker Title="Мова інтерфейсу">
+            <Picker.Items>
+                <x:String>Українська</x:String>
+                <x:String>English</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Зберегти" />
+    </VerticalStackLayout>
+</ContentPage>

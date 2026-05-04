@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radius.Pages.CalendarPage"
+             Title="Календар">
+    <VerticalStackLayout Padding="24" Spacing="12">
+        <Label Text="Календар записів"
+               FontSize="24"
+               FontAttributes="Bold" />
+        <DatePicker />
+        <Frame><Label Text="08:30 — Renault Megane — Заміна шин" /></Frame>
+        <Frame><Label Text="10:00 — Nissan Leaf — Балансування" /></Frame>
+        <Frame><Label Text="13:40 — VW Passat — Ремонт проколу" /></Frame>
+        <Frame><Label Text="17:00 — Toyota Camry — Зберігання шин" /></Frame>
+    </VerticalStackLayout>
+</ContentPage>

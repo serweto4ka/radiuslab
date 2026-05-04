@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radius.Pages.OnboardingPage"
+             Title="Onboarding">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Radius — швидкий запис на шиномонтаж"
+                   FontSize="24"
+                   FontAttributes="Bold" />
+
+            <Frame>
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Слайд 1: Обирайте послугу за 30 секунд" FontAttributes="Bold" />
+                    <Label Text="Заміна шин, балансування, сезонне зберігання, перевірка тиску." />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Слайд 2: Бронювання часу без дзвінків" FontAttributes="Bold" />
+                    <Label Text="Оберіть дату, час і філію на карті — підтвердження миттєво." />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Слайд 3: Історія обслуговування в одному місці" FontAttributes="Bold" />
+                    <Label Text="Переглядайте минулі записи, вартість послуг і рекомендації майстра." />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Почати" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

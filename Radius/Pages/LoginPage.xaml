@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radius.Pages.LoginPage"
+             Title="Вхід до Radius">
+    <Grid BackgroundColor="#0F172A">
+        <ScrollView>
+            <VerticalStackLayout Padding="24,56,24,24" Spacing="16">
+                <Label Text="Radius"
+                       FontSize="38"
+                       FontAttributes="Bold"
+                       TextColor="White" />
+                <Label Text="Сервіс запису на шиномонтаж"
+                       FontSize="16"
+                       TextColor="#CBD5E1" />
+
+                <Border StrokeThickness="0"
+                        BackgroundColor="#1E293B"
+                        Padding="16"
+                        StrokeShape="RoundRectangle 18">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Вхід / Реєстрація"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White" />
+                        <Entry x:Name="NameEntry"
+                               Placeholder="Ім'я"
+                               TextColor="White"
+                               PlaceholderColor="#94A3B8" />
+                        <Entry x:Name="EmailEntry"
+                               Placeholder="Email"
+                               Keyboard="Email"
+                               TextColor="White"
+                               PlaceholderColor="#94A3B8" />
+                        <Entry x:Name="PhoneEntry"
+                               Placeholder="Телефон"
+                               Keyboard="Telephone"
+                               TextColor="White"
+                               PlaceholderColor="#94A3B8" />
+                        <Entry x:Name="PasswordEntry"
+                               Placeholder="Пароль"
+                               IsPassword="True"
+                               TextColor="White"
+                               PlaceholderColor="#94A3B8" />
+                        <Button Text="Увійти"
+                                Clicked="OnSignInClicked"
+                                BackgroundColor="#22C55E"
+                                TextColor="White" />
+                        <Button Text="Зареєструватися"
+                                Clicked="OnRegisterClicked"
+                                BackgroundColor="#334155"
+                                TextColor="White" />
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

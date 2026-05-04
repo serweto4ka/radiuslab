@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Radius.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Radius.Pages"
+    Title="Radius">
+
+    <TabBar>
+        <ShellContent
+            Title="Записи"
+            ContentTemplate="{DataTemplate pages:DashboardPage}"
+            Route="DashboardPage" />
+        <ShellContent
+            Title="Запис на шиномонтаж"
+            ContentTemplate="{DataTemplate pages:BookAppointmentPage}"
+            Route="BookAppointmentPage" />
+        <ShellContent
+            Title="Мої машини"
+            ContentTemplate="{DataTemplate pages:VehiclesPage}"
+            Route="VehiclesPage" />
+        <ShellContent
+            Title="Мій профіль"
+            ContentTemplate="{DataTemplate pages:ProfilePage}"
+            Route="ProfilePage" />
+    </TabBar>
+
+</Shell>
